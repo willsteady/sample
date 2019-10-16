@@ -1,15 +1,68 @@
 import java.io.Console;
 
-public class Game {
-     public static void main (String[] args) {
-         System.out.println("Welcome to the Countries game.");
-Console console = System.console();
-String answer = console.readLine ("Which continent does ' Sweden ' belong to?");
-String continent = "Europe";
-if (answer.equals(continent)) {
-System.out.println("Correct!");
-} else { 
-System.out.println("No, the correct answer is " + continent);
+import java.io.BufferedReader;
+
+import java.io.FileReader;
+
+import java.io.IOException;
+
+import java.io.FileNotFoundException;
+class Game {
+
+                    public static void main(String[] args) {
+
+                                       System.out.println("Countries Game");
+
+                                       Console console = System.console();
+
+                                       BufferedReader br = null;
+
+                                       try {
+
+                                                           br = new BufferedReader(new FileReader("continents.csv"));
+
+                                                           String line;
+
+                                                           while ((line = br.readLine()) != null) {
+
+                                                                              String[] cols = line.split(",");
+
+                                                                              String continent = cols[1];
+
+                                                                              String country = cols[0];
+
+                                                                              String answer = console.readLine("Which continent does " + country + " belong to? ");
+
+                                                                              if (answer.equalsIgnoreCase(continent)) {
+
+                                                                                                  System.out.println("Correct!");
+
+                                                                              }
+
+                                                                              else {
+
+                                                                                                  System.out.println("No, the answer is " + continent);
+
+                                                                              }
+
+                                                           }
+
+                                       }
+
+                    catch (FileNotFoundException e) {
+
+                                       e.printStackTrace();
+
+                                       } catch (IOException e) {
+
+                                       e.printStackTrace();
+
+                                       }
+
+                    }
+
 }
-}
-}
+
+ 
+
+

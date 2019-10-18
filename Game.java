@@ -16,6 +16,11 @@ class Game {
                                        Console console = System.console();
 
                                        BufferedReader br = null;
+<<<<<<< HEAD
+=======
+int total = 0;
+int correct = 0;
+>>>>>>> add-scoring
 
                                        try {
 
@@ -25,7 +30,12 @@ class Game {
 
                                                            while ((line = br.readLine()) != null) {
 
+<<<<<<< HEAD
                                                                               String[] cols = line.split(",");
+=======
+                                                           total++;
+                   String[] cols = line.split(",");
+>>>>>>> add-scoring
 
                                                                               String continent = cols[1];
 
@@ -33,9 +43,16 @@ class Game {
 
                                                                               String answer = console.readLine("Which continent does " + country + " belong to? ");
 
+<<<<<<< HEAD
                                                                               if (answer.equalsIgnoreCase(continent)) {
 
                                                                                                   System.out.println("Correct!");
+=======
+                                                                              if (answer.equals(continent)) {
+
+                                                                                                  System.out.println("Correct!");
+correct++;
+>>>>>>> add-scoring
 
                                                                               }
 
@@ -58,6 +75,10 @@ class Game {
                                        e.printStackTrace();
 
                                        }
+<<<<<<< HEAD
+=======
+System.out.println("You scored " + correct + "out of " + total);
+>>>>>>> add-scoring
 
                     }
 

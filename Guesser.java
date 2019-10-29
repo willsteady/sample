@@ -6,14 +6,14 @@ public class Guesser {
 	private int low;
 	private int high;
 
-public Guesser(int low, int high) {
+public Guesser(int ilow, int ihigh) {
 
-		if (low > high) {
+		if (ilow > ihigh) {
 			throw new IllegalArgumentException("The first parameter must be lower than the second parameter");
 
 		} else {
-			this.low = low;
-			this.high = high;
+			this.low = ilow;
+			this.high = ihigh;
 
 		}
 	}

@@ -1,0 +1,16 @@
+Hi, I aim for VG.
+
+- När använder man ?add? respektive ?commit??
+
+- Vad är ?pull? repektive ?push??
+
+- När använder man ?log? respektive ?status??
+
+- Hur kan man formulera sig i sina commit-meddelanden?
+
+- Du kan lägga detta i samma fil som hade länken till ditt repo.
+
+- Det finns flera sätt att rulla tillbaka koden till ett tidigare tillstånd. 
+Förklara skillnaden ochmotivera när man skulle använda den ena eller andra metoden. 
+Ge gärna exempel påde kommandon du använder för att göra detta och vissa att det fungerar, 
+vilken outputdu fick från git-kommandona eller din IDE.

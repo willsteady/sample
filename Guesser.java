@@ -32,3 +32,20 @@ public void start() {
 	    System.out.println("I'm going to ask a few questions in order " + "to guess the number.");
 	    System.out.println("Please answer T for true, and F for false.\n");
 	  }
+@SuppressWarnings("resource")
+	private String getReply() {
+        String reply = null;
+        boolean correctAnswer = false;
+        do {
+            System.out.println("Please write T or F");
+            //reply = System.console().readLine();
+            reply = new Scanner(System.in).nextLine();
+            if (reply.equals("T") || reply.equals("F")) {
+                correctAnswer = true;
+            } else {
+                System.out.println("Write answer: T or F");
+                correctAnswer = false;
+            }
+        } while (correctAnswer == false);
+        return reply;
+	  }

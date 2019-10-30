@@ -1,28 +1,16 @@
-Hi, I'm aiming for VG.
+Hi, I aim for VG.
 
 - När använder man ?add? respektive ?commit??
 
-Add is used to propose changes in files and move them to the staging area (add to the index) where we work on them. Commit is used to commit those changes and move the files from the staging area to the HEAD of our local working copy. But the files are still not in the remote repository yet after commiting. 
-
 - Vad är ?pull? repektive ?push??
-
-Pull updates our local repository to the newest commit and push uploads commited files from HEAD of our local copy to the remote repository. 
 
 - När använder man ?log? respektive ?status??
 
-With log commando we can study repository's hitory, we see what steps were done and follow the development stages and status shows the working tree status - if we have some files waiting to be added or commited or not. 
-
 - Hur kan man formulera sig i sina commit-meddelanden?
-
-It's important to be clear and exact, so both you youself and other people would understand what was done. 
 
 - Du kan lägga detta i samma fil som hade länken till ditt repo.
 
 - Det finns flera sätt att rulla tillbaka koden till ett tidigare tillstånd. 
-Förklara skillnaden och motivera när man skulle använda den ena eller andra metoden. 
+Förklara skillnaden ochmotivera när man skulle använda den ena eller andra metoden. 
 Ge gärna exempel påde kommandon du använder för att göra detta och vissa att det fungerar, 
 vilken outputdu fick från git-kommandona eller din IDE.
-
-git revert command creates a new commit that undoes the changes from a previous commit. This command adds new history to the project (but it doesn't modify existing history).
-
-git reset command modifies the index ("staging area"). Or it changes which commit a branch head is currently pointing at. This command may alter existing history (by changing the commit that a branch references).

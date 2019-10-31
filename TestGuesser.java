@@ -1,5 +1,3 @@
-package gitProject;
-
 public class TestGuesser {
 
 	private static boolean isToStringOverridden() {

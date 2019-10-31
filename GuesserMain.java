@@ -1,5 +1,3 @@
-package gitProject;
-
 public class GuesserMain {
 
 	public static void main(String[] args) {

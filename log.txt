@@ -1,3 +1,11 @@
+commit 983e3c012da79717f1aed7887b730ab1800739f2 (HEAD -> master)
+Author: willsteady <56724468+willsteady@users.noreply.github.com>
+Date:   Fri Nov 1 12:21:53 2019 +0100
+
+    Update log.txt
+
+    Copied log information into the log text file
+
 commit 0c3056300972659e5e8f13be7c29d5e4fc25970b (HEAD -> master, origin/master, origin/HEAD)
 Author: willsteady <56724468+willsteady@users.noreply.github.com>
 Date:   Fri Nov 1 10:29:41 2019 +0100

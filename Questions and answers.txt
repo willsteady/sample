@@ -4,7 +4,9 @@ The link to my repository on Github: https://github.com/willsteady/sample
 
 - När använder man ?add? respektive ?commit??
 
-Answer: Add is used to propose changes in files and move them to the staging area (add to the index) where we work on them. Commit is used to commit those changes and move the files from the staging area to the HEAD of our local working copy. But the files are still not in the remote repository yet after commiting. 
+Answer: Add is used to propose changes in files and move them to the staging area (add to the index) where we work on them. 
+Commit is used to commit those changes and move the files from the staging area to the HEAD of our local working copy. 
+But the files are still not in the remote repository yet after commiting. We need to use git push command to upload them to our remote repository.
 
 - Vad är ?pull? repektive ?push??
 
@@ -12,19 +14,53 @@ Answer: Pull updates our local repository to the newest commit and push uploads 
 
 - När använder man ?log? respektive ?status??
 
-Answer: With log commando we can study repository's hitory, we see what steps were done and follow the development stages and status shows the working tree status - if we have some files waiting to be added or commited or not. 
+Answer: With log commando we can study repository's history, we see what steps were done and follow the development stages. Status shows the working tree 
+status - if we have some files waiting to be added or commited or not. 
 
 - Hur kan man formulera sig i sina commit-meddelanden?
 
-Answer: It's important to be clear and exact, so both you youself and other people would understand what was done. 
+Answer: It's important to be clear and exact, so both you and other people would understand what was done. The message should be also short.
 
-- Du kan lägga detta i samma fil som hade länken till ditt repo.
 
 - Det finns flera sätt att rulla tillbaka koden till ett tidigare tillstånd. 
 Förklara skillnaden och motivera när man skulle använda den ena eller andra metoden. 
 Ge gärna exempel påde kommandon du använder för att göra detta och vissa att det fungerar, 
 vilken outputdu fick från git-kommandona eller din IDE.
 
-Answer: git revert command creates a new commit that undoes the changes from a previous commit. This command adds new history to the project (but it doesn't modify existing history).
+Answer: git revert command creates a new commit that undoes the changes from a previous commit(s). This command adds new history to the project 
+(but it doesn't modify existing history). It's important if you want to keep history for revision and so other team members can see what didn't work and was
+changed. You can use git revert when you for example found a bug introduced by a single commit. Then git revert goes in, fixes it and creates a new commit. I used
+git reset in my git project. It changed the information in my text file in the previous version and added a new commit. 
 
-git reset command modifies the index ("staging area"). Or it changes which commit a branch head is currently pointing at. This command may alter existing history (by changing the commit that a branch references).t-kommandona eller din IDE.
+git reset command 
+
+git reset changes, at minimum, where the current branch (HEAD) is pointing. It can also may or may not modify the index depending what type of reset command we are using. 
+
+
+For example if we are on branch master and have the following series of commits:
+- A - B - C (master)
+
+HEAD points to C and the index matches C.
+
+Then we run git reset --soft B. After that the master and HEAD points to B instead of C, but the index still has changes from C. 
+
+We run git status and see them as staged. So if we choose to run git commit now we will get a new commit with the same changes as C. We can use soft reset if we for 
+example made a mistake in commit B and saw it after we already made commit C. We do soft reset, correct and re-commit B and then re-commit C. 
+
+Now we are back where we were from the beginning:
+- A - B - C (master)
+
+Instead of the soft reset we run git reset --mixed B. Our master and HEAD points at B after that. But this time the index also got modified to match B.
+If we run git commit now nothing going to happen because the index matches HEAD. We have changes in the working directory, but there are not in the 
+index so if we run git status they will be shown as unstaged. We would need to run git add and git commit to commit them. Or commit -am which combines both commands.
+We use mixed reset if we want not only move our HEAD to B, but also unstage our changes. Then we can correct our file, add it to the staging area and then commit it. 
+
+
+Now we are back again where we were from the beginning:
+- A - B - C (master)
+
+This time we run git --hard B. It changes our HEAD and index just like git --mixed did. But now also working directory also got modified. 
+All changes added to C and any uncommited changes we have will be removed when we run hard reset. The files in our working cory will match commit B. 
+You use it when all changes added to C were wrong and you want to remove them all.You should be careful using hard reset because you can permanently lose 
+your changes when you use it. It's important to run git status before and check so the working directory is clean or that your uncommited changes can be losed
+(if you don't need them).

@@ -1,0 +1,229 @@
+commit 0c3056300972659e5e8f13be7c29d5e4fc25970b (HEAD -> master, origin/master, origin/HEAD)
+Author: willsteady <56724468+willsteady@users.noreply.github.com>
+Date:   Fri Nov 1 10:29:41 2019 +0100
+
+    Create log.txt
+
+    Created log file
+
+commit 4c71d089f3fc18c63ce10d3878703b026d50e6ec
+Author: willsteady <56724468+willsteady@users.noreply.github.com>
+Date:   Fri Nov 1 10:28:50 2019 +0100
+
+    Update Questions and answers.txt
+
+    Added more information about reset and revert commands.
+
+commit 7fac0b4da2e86d648f40768bdb74af13184bc009
+Author: willsteady <56724468+willsteady@users.noreply.github.com>
+Date:   Fri Nov 1 09:35:59 2019 +0100
+
+    Update Questions and answers.txt
+
+    Added a link to my repository
+
+commit fa1c277b50bed90c43a74d2ca372d06c0dbe3373
+Author: willsteady <56724468+willsteady@users.noreply.github.com>
+Date:   Thu Oct 31 15:47:06 2019 +0100
+
+    Update Questions and answers.txt
+
+    Updated my answers in "Questions and answers"
+
+commit 5cdb704a0f992d12ee147bf8e1ac239add611922
+Author: willsteady <56724468+willsteady@users.noreply.github.com>
+Date:   Thu Oct 31 15:43:41 2019 +0100
+
+    Create TestGuesser.class
+
+    Removed package name
+
+commit 0ba46c9a6c63dc3fe6b423245b01366515b529e9
+Author: willsteady <56724468+willsteady@users.noreply.github.com>
+Date:   Thu Oct 31 15:43:36 2019 +0100
+
+    Create GuesserMain.class
+
+    Removed package name
+
+commit 28b20eebdc83f27526626ce1f7651956f92ee81c
+Author: willsteady <56724468+willsteady@users.noreply.github.com>
+Date:   Thu Oct 31 15:43:22 2019 +0100
+
+    Create Guesser.class
+
+    Removed package name
+
+commit 1ec02f80723d65dbf1ae1a4df072f84de148444e
+Author: willsteady <56724468+willsteady@users.noreply.github.com>
+Date:   Thu Oct 31 15:42:54 2019 +0100
+
+    Update TestGuesser.java
+
+    Removed package name
+
+commit 439fab0c5ddfed87894cc913640554ab87aad9e4
+Author: willsteady <56724468+willsteady@users.noreply.github.com>
+Date:   Thu Oct 31 15:42:47 2019 +0100
+
+    Update GuesserMain.java
+
+    Removed package name
+
+commit b8da9e00b98ed976ff98dc1853c02f15b7695a89
+Author: willsteady <56724468+willsteady@users.noreply.github.com>
+Date:   Thu Oct 31 15:42:16 2019 +0100
+
+    Update Guesser.java
+
+    Removed package name
+
+commit bfe199f0b5a5f7d5ee26942be5da3af52b74b670
+Author: willsteady <56724468+willsteady@users.noreply.github.com>
+Date:   Wed Oct 30 16:20:51 2019 +0100
+
+    Revert "Update Questions and answers.txt"
+
+    This reverts commit 624cbdf59327353a4af38aa1df489b339d613abe.
+
+commit 624cbdf59327353a4af38aa1df489b339d613abe
+Author: willsteady <56724468+willsteady@users.noreply.github.com>
+Date:   Tue Oct 29 22:31:28 2019 +0100
+
+    Update Questions and answers.txt
+
+    Added answers to the file Questions and answers.
+
+commit e7e51f8647bfaef5c4a0b682c3b8af7d0efd7079
+Author: willsteady <56724468+willsteady@users.noreply.github.com>
+Date:   Tue Oct 29 22:09:16 2019 +0100
+
+    Update Questions and answers.txt
+
+    Wrote questions in the file Questions and answers
+
+commit e1562df43f372e125690624cb6b89c6f761afd8c
+Author: willsteady <56724468+willsteady@users.noreply.github.com>
+Date:   Tue Oct 29 22:05:47 2019 +0100
+
+    Create Questions and answers.txt
+
+    Created a textfile Questions and Answers
+
+commit 843f6d7e7b15632274587db7e439a4624454305d
+Author: willsteady <56724468+willsteady@users.noreply.github.com>
+Date:   Tue Oct 29 21:58:16 2019 +0100
+
+    Update Guesser.java
+
+    Updated the constructor of the class Guesser .
+
+commit 90e0f776b92ea09ee86668cb991ff67cdd5b4a5a
+Author: willsteady <56724468+willsteady@users.noreply.github.com>
+Date:   Tue Oct 29 21:55:27 2019 +0100
+
+    Update GuesserMain.java
+
+    Updated the file GuesserMain.java so that user can choose which interval of numbers to choose. Added variables int ilow and int ihigh, which get send to the constructor when an object of the class Guesser get created.
+
+commit 3b51bdedfde9fe683d166a29a4317716827e1576
+Author: willsteady <56724468+willsteady@users.noreply.github.com>
+Date:   Tue Oct 29 21:46:17 2019 +0100
+
+    Update TestGuesser.java
+
+    Filled in TestGuesser.java
+
+commit 3f15a2526be92689f5e3d839fa23b7cc4d05554f
+Author: willsteady <56724468+willsteady@users.noreply.github.com>
+Date:   Tue Oct 29 21:45:10 2019 +0100
+
+    Create TestGuesser.java
+
+    Created TestGuesser.java
+
+commit 42aca34a6bbaabddcacdee64d698366332ef3b83
+Author: willsteady <56724468+willsteady@users.noreply.github.com>
+Date:   Tue Oct 29 21:39:57 2019 +0100
+
+    Update .gitignore.txt
+
+    Filled in .gitignore file
+
+commit 937791caae4fa0a1b6efa5f7ea15efbd3ca9bbd8
+Author: willsteady <56724468+willsteady@users.noreply.github.com>
+Date:   Tue Oct 29 21:38:22 2019 +0100
+
+    Create .gitignore.txt
+
+    Created .gitignore file
+
+commit 78fda8199ac81dea360f730b1119c2f8576c5c8d
+Author: willsteady <56724468+willsteady@users.noreply.github.com>
+Date:   Tue Oct 29 21:36:07 2019 +0100
+
+    Update GuesserMain.java
+
+    Wrote the main method in GuesserMain.java where I create an object of class Guesser och then call the method start to start the guessing game.
+
+commit 3404ab0f937adb8eb63e1c8bdc890496aa919ea2
+Author: willsteady <56724468+willsteady@users.noreply.github.com>
+Date:   Tue Oct 29 21:33:26 2019 +0100
+
+    Create GuesserMain.java
+
+    Created GuesserMain.file
+
+commit e0be6663b4be26305feb887738e159e48932d911
+Author: willsteady <56724468+willsteady@users.noreply.github.com>
+Date:   Tue Oct 29 21:31:18 2019 +0100
+
+    Update Guesser.java
+
+    Wrote doGuesses() method
+
+commit 708664aacdb3dc492d6db21652f6f9cafbdc1884
+Author: willsteady <56724468+willsteady@users.noreply.github.com>
+Date:   Tue Oct 29 21:27:47 2019 +0100
+
+    Update Guesser.java
+
+    Wrote getReply() method
+
+commit d83374d22878ecdf50cd41ca07c05754b47598a1
+Author: willsteady <56724468+willsteady@users.noreply.github.com>
+Date:   Tue Oct 29 21:25:03 2019 +0100
+
+    Update Guesser.java
+
+    Completed the start() method, so that
+     in the method body, the rules() method is called first, next the doGuesses() method.
+
+commit a5dca6a672cbd3867cca2b097188beb83a435d8c
+Author: willsteady <56724468+willsteady@users.noreply.github.com>
+Date:   Tue Oct 29 21:18:56 2019 +0100
+
+    Update Guesser.java
+
+    Wrote class Guesser and constructor Guesser in Guesser.java
+
+commit a13d9fcd5d44552a8a839008f6a3a783292a997b
+Author: willsteady <56724468+willsteady@users.noreply.github.com>
+Date:   Tue Oct 29 21:15:00 2019 +0100
+
+    Create Guesser.java
+
+    Created Guesser.java
+
+commit 80f98996f1aebd06114882f8c5d560aae7270852
+Author: willsteady <56724468+willsteady@users.noreply.github.com>
+Date:   Tue Oct 29 21:13:41 2019 +0100
+
+    Delete Guesser.java
+
+commit 16c2fb94da2afba2310b7398c7ef9ed3f60b3ebc
+Merge: 9d567b1 92a26b3
+Author: willsteady <56724468+willsteady@users.noreply.github.com>
+Date:   Tue Oct 29 21:10:56 2019 +0100
+
+    Merge branch 'master' of https://github.com/willsteady/sample

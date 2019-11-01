@@ -1,5 +1,7 @@
 Hi, I'm aiming for VG.
 
+The link to my repository on Github: https://github.com/willsteady/sample
+
 - När använder man ?add? respektive ?commit??
 
 Answer: Add is used to propose changes in files and move them to the staging area (add to the index) where we work on them. Commit is used to commit those changes and move the files from the staging area to the HEAD of our local working copy. But the files are still not in the remote repository yet after commiting. 
